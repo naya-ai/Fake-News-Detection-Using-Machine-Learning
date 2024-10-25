@@ -1,183 +1,168 @@
-# Fake-News-Detection-Using-Machine-Learning
+# Benchmarking Modeling Techniques for Highly Coiled Hair in Computer Graphics
 
-## **Project Overview**
+## Project Overview
 
-### **What Am I Doing?**
-This project focuses on building a machine learning model to classify news articles as either **True** or **Fake** using a binary classification approach. The project uses the **True vs Fake News Detection dataset** from Kaggle to train and evaluate the model.
+### What Am I Doing?
 
-### **How Am I Doing It?**
-The project will follow a structured machine learning workflow, which includes:
-1. **Data Preprocessing**: Cleaning and preparing the text data for training.
-2. **Feature Extraction**: Converting the text into numerical vectors using techniques such as **TF-IDF** or **Word Embeddings**.
-3. **Model Training**: Building and training machine learning models such as **Naive Bayes**, **Logistic Regression**, and **Neural Networks**.
-4. **Model Evaluation**: Using test data to evaluate model performance based on accuracy, precision, recall, and F1-score.
-5. **Model Improvement**: Iterating on model improvements by fine-tuning hyperparameters and exploring advanced techniques.
+This project focuses on **assessing and benchmarking existing modeling techniques for simulating highly coiled hair** (Type 4 hair) in computer graphics. The aim is to evaluate these methods based on various criteria and provide insights and recommendations from my perspective to enhance representation and diversity in digital media.
 
-### **Why Am I Doing It?**
-The rise of fake news has become a critical issue in today’s media landscape, with misinformation having potentially harmful consequences. By developing an automated system to classify news articles as **True** or **Fake**, this project aims to contribute to efforts to curb the spread of misinformation online.
+### How Am I Doing It?
 
----
+The project will follow a structured approach, which includes:
 
-## **Dataset Information**
+1. **Literature Review**: Studying existing research papers and articles on modeling highly coiled hair.
+2. **Defining Benchmarking Criteria**: Establishing the parameters for evaluating different techniques.
+3. **Comparative Analysis**: Assessing each modeling method based on the defined criteria without recreating hair models.
+4. **Results and Discussion**: Analyzing findings and incorporating my opinions on the effectiveness of each method.
+5. **Recommendations**: Providing suggestions for best practices and potential improvements based on the assessment.
 
-### **Dataset Source**: [Kaggle True vs Fake News Detection Dataset](https://www.kaggle.com/datasets/emineyetm/fake-news-detection-datasets/data)
+### Why Am I Doing It?
 
-### **Dataset Components**:
-- **true.csv**: Contains news articles that are confirmed to be true.
-- **fake.csv**: Contains news articles that are classified as fake.
+Highly coiled hair has been historically underrepresented and often inaccurately portrayed in computer graphics. By benchmarking existing modeling techniques and offering my insights, this project aims to:
 
-Each file contains the following columns:
-- **title**: The headline of the news article.
-- **text**: The body text of the article.
-- **label**: For labeling purposes, 1 represents **True** news and 0 represents **Fake** news (if this is not included in the dataset, we will label it manually).
+- **Highlight the strengths and weaknesses** of current methods.
+- **Contribute to discussions** on improving cultural accuracy in digital media.
+- **Promote diversity and inclusivity** by advocating for better representation of Black hairstyles.
 
-### **Training and Testing Split**:
-- **Training Data**: 80% of the dataset will be used for training the models.
-- **Test Data**: 20% of the dataset will be set aside to evaluate model performance on unseen data.
+## References and Resources
 
----
+- **"Lifted Curls: A Novel Method for Modeling Highly Curly Hair"**
+  - *Authors*: T. Kim et al.
+  - *Link*: [Lifted Curls Paper](https://www.tkim.graphics/LIFTED/Lifted_Curls.pdf)
+- **"Killmonger’s Cut Is Everywhere in Games"**
+  - *Author*: Trone Dowd
+  - *Publication Date*: February 28, 2024
+  - *Source*: [IGN Article](https://www.ign.com/articles/killmonger-cut-everywhere-games-spider-man-tekken-8)
+- **"Code My Crown" Campaign**
+  - *Organization*: Dove
+  - *Link*: [Dove Campaign](https://www.dove.com/us/en/stories/campaigns/code-my-crown.html)
+- **"Black Hair in Video Games: The Struggle for Accurate Representation"**
+  - *Author*: Trone Dowd
+  - *Publication Date*: January 7, 2022
+  - *Source*: [Vice Article](https://www.vice.com/en/article/black-hair-in-video-games/)
+- **"More Than Killmonger Locs: A Style Guide for Black Hair in Computer Graphics"**
+  - *Authors*: A.M. Darke, Isaac Olander, T. Kim
 
-## **Milestone Plan**
+## Milestone Plan
 
-### **1. Data Preparation**
-#### **Goal**:
-Prepare the dataset for modeling by cleaning, preprocessing, and splitting it into training and testing sets.
+### 1. Literature Review
 
-#### **Steps**:
-- [ ] **Load Data**:
-   - Import both `true.csv` and `fake.csv` into a single DataFrame, labeling each article as either **True (1)** or **Fake (0)**.
+**Goal**: Gain a comprehensive understanding of existing modeling techniques for highly coiled hair.
 
-- [ ] **Data Cleaning**:
-   - Remove any duplicates or missing values.
-   - Convert text to lowercase, remove punctuation, and clean up special characters.
+**Steps**:
 
-- [ ] **Train-Test Split**:
-   - Split the dataset into **80% training data** and **20% test data** for evaluation.
+- **Collect and Read Key References**:
+  - Summarize the main points, methodologies, and findings of each source.
+- **Identify Modeling Techniques**:
+  - Geometric methods (e.g., Lifted Curls).
+  - Artistic approaches from style guides.
+  - Standard industry practices.
 
-- [ ] **Exploratory Data Analysis (EDA)**:
-   - Perform EDA to understand the distribution of true vs fake news, word counts, and any patterns in the dataset.
+**Deliverables**:
 
-#### **Deliverables**:
-- [ ] Cleaned and labeled dataset.
-- [ ] Dataset split into training and test sets.
-- [ ] Exploratory data analysis summary and visualizations.
+- Annotated summaries of each reference.
+- A comparative table listing different modeling techniques.
 
----
+### 2. Define Benchmarking Criteria
 
-### **2. Feature Extraction**
-#### **Goal**:
-Convert the text data into a numerical format that can be fed into machine learning models.
+**Goal**: Establish clear criteria for assessing modeling techniques.
 
-#### **Steps**:
-- [ ] **TF-IDF Vectorization**:
-   - Apply **TF-IDF** vectorization to convert both the headlines and body text into numerical features.
-   - Ensure the vector size is consistent for both the true and fake news samples.
+**Steps**:
 
-- [ ] **Word Embeddings (Optional)**:
-   - Optionally, explore using **Word2Vec** or **GloVe** word embeddings for richer text representations.
+- **Determine Evaluation Parameters**:
+  - **Realism and Visual Fidelity**
+  - **Cultural Accuracy**
+  - **Industry Adoption**
+  - **Ease of Implementation**
+  - **Resource Requirements**
+  - **Flexibility and Scalability**
 
-- [ ] **Feature Selection**:
-   - Explore feature importance to identify which words or phrases are most predictive of fake or true news.
+**Deliverables**:
 
-#### **Deliverables**:
-- [ ] TF-IDF vectors for the dataset.
-- [ ] Optional word embeddings for deeper text representation.
-- [ ] Analysis of important features for classification.
+- A detailed document outlining each criterion and its importance.
+- Justification for the selection of these criteria based on literature.
 
----
+### 3. Comparative Analysis
 
-### **3. Model Selection and Implementation**
-#### **Goal**:
-Build and train machine learning models to classify news articles as true or fake.
+**Goal**: Assess each modeling technique based on the defined criteria without hands-on implementation.
 
-#### **Methods**:
-1. **Baseline Model (Naive Bayes)**:
-   - [ ] Implement a **Naive Bayes classifier** as a baseline for the classification task.
+**Steps**:
 
-2. **Logistic Regression**:
-   - [ ] Train a **Logistic Regression model** as another baseline for comparison.
-   - [ ] Tune hyperparameters such as regularization to improve performance.
+- **Analyze Techniques Using Literature and Case Studies**:
+  - Evaluate how each method performs according to the criteria.
+  - Use examples from games, movies, and animations discussed in the articles.
+- **Incorporate Personal Insights**:
+  - Provide my opinions on the effectiveness and limitations of each technique.
+  - Reflect on how these methods impact representation.
 
-3. **Neural Network (PyTorch)**:
-   - [ ] Build and train a **simple neural network** using **PyTorch**.
-   - [ ] Use multiple layers with **ReLU activation** and a **softmax output** for binary classification.
+**Deliverables**:
 
-4. **Training**:
-   - [ ] Train all models on the **80% training data**.
-   - [ ] Evaluate the models using **cross-validation**.
+- A comprehensive comparative analysis report.
+- Charts or tables summarizing the assessment.
 
-5. **Evaluation**:
-   - [ ] Evaluate the models on the **20% test data** using metrics like **accuracy, precision, recall, and F1-score**.
+### 4. Results and Discussion
 
-#### **Deliverables**:
-- [ ] Trained Naive Bayes, Logistic Regression, and Neural Network models.
-- [ ] Evaluation metrics for each model.
-- [ ] Cross-validation results for each model.
+**Goal**: Interpret the findings from the comparative analysis.
 
----
+**Steps**:
 
-### **4. Model Evaluation and Results**
-#### **Goal**:
-Analyze the performance of the models and compare their results.
+- **Summarize Key Findings**:
+  - Highlight which techniques excel in certain criteria.
+- **Discuss Trade-Offs and Implications**:
+  - Analyze the balance between realism and resource requirements.
+  - Consider the impact on cultural representation.
+- **Include Personal Reflections**:
+  - Offer my perspective on the importance of each finding.
+  - Discuss how these insights could influence industry practices.
 
-#### **Steps**:
-- [ ] **Confusion Matrix**:
-   - Generate confusion matrices for each model to understand how well they classify true and fake news.
+**Deliverables**:
 
-- [ ] **Model Comparison**:
-   - Compare the models’ performance based on accuracy, precision, recall, and F1-score.
-   - Analyze the trade-offs between simple models (Naive Bayes, Logistic Regression) and more complex models (Neural Networks).
+- A detailed discussion section in the report.
+- Personal reflections integrated into the analysis.
 
-- [ ] **Strongest Features**:
-   - Identify the most predictive words or phrases from the TF-IDF features for both true and fake news.
+### 5. Recommendations and Conclusion
 
-#### **Deliverables**:
-- [ ] Confusion matrices for all models.
-- [ ] Model comparison based on evaluation metrics.
-- [ ] Analysis of key features that predict fake news.
+**Goal**: Provide suggestions based on the assessment and personal opinions.
 
----
+**Steps**:
 
-### **5. Strategy for Improvement**
-#### **Goal**:
-Develop strategies to further improve the model’s performance and robustness.
+- **Develop Recommendations**:
+  - Suggest best practices for artists and developers.
+  - Propose areas where current techniques can be improved.
+- **Conclude the Assessment**:
+  - Summarize the overall effectiveness of existing methods.
+  - Emphasize the importance of cultural accuracy and diversity.
 
-#### **Steps**:
-1. **Hyperparameter Tuning**:
-   - Fine-tune the hyperparameters of all models (e.g., learning rate, regularization, number of hidden layers for neural networks).
+**Deliverables**:
 
-2. **Ensemble Methods**:
-   - Explore combining models using ensemble methods such as **Voting Classifier** or **Stacking** to improve accuracy.
+- A recommendations section with actionable advice.
+- A concluding statement summarizing the project's insights.
 
-3. **Advanced Neural Networks**:
-   - Experiment with deeper neural network architectures or **Convolutional Neural Networks (CNNs)** for better text feature extraction.
+## Justification
 
-4. **Data Augmentation**:
-   - Explore techniques like **synthetic data generation** to increase the diversity of training data.
+### Why Am I Using These Methods?
 
-#### **Deliverables**:
-- [ ] Plan for hyperparameter tuning and model improvements.
-- [ ] Ensemble model implementation (optional).
-- [ ] Suggested improvements in model architecture for advanced models.
+- **Feasibility**: Assessing existing techniques without recreating models is practical and time-efficient.
+- **Depth of Analysis**: Allows for a focused evaluation based on comprehensive research.
+- **Personal Contribution**: Integrating my opinions adds a unique perspective to the discourse.
+- **Broader Impact**: The assessment can inform others without the need for technical implementation.
 
----
+## Final Deliverables
 
-## **Justification**
-### **Why Am I Using These Methods?**
-- **Naive Bayes**: A fast and interpretable baseline for text classification.
-- **Logistic Regression**: A simple but powerful linear classifier for binary classification.
-- **Neural Networks (PyTorch)**: More complex models capable of capturing deeper patterns in text data, especially useful for larger datasets.
+- **Project Report**: Documenting the literature review, benchmarking criteria, comparative analysis, results, discussion, and recommendations.
+- **Comparative Tables/Charts**: Visual representations of the assessment.
+- **Annotated Bibliography**: Summaries of all references used.
+- **Presentation**: A concise overview of the project for sharing with peers or at symposiums.
 
----
+## Additional Notes
 
-## **Final Deliverables**
-### **Goal**:
-Summarize the final deliverables for the project.
+### Ethical Considerations
 
-1. **Cleaned Dataset**: Processed and labeled dataset with true and fake news articles.
-2. **Model Implementations**:
-   - Trained Naive Bayes, Logistic Regression, and Neural Network models.
-3. **Evaluation Results**:
-   - Confusion matrices, accuracy, precision, recall, and F1-score for all models.
-4. **Documentation**:
-   - Complete project documentation explaining methods, results, and suggestions for future work.
+- **Cultural Sensitivity**: Ensure respectful discussion of Black hairstyles and cultural significance.
+- **Attribution**: Properly credit all sources and authors.
+
+### Potential Impact
+
+- **Awareness**: Highlight the need for better representation in computer graphics.
+- **Industry Influence**: Encourage developers to adopt more accurate modeling techniques.
+- **Educational Resource**: Serve as a reference for students and professionals interested in the topic.
